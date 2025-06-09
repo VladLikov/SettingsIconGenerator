@@ -16,10 +16,15 @@ let package = Package(
             targets: ["SettingsIconGenerator"]
         )
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/sparrowcode/SafeSFSymbols.git", .upToNextMajor(from: "2.0.1")),
+    ],
     targets: [
         .target(
-            name: "SettingsIconGenerator"
+            name: "SettingsIconGenerator",
+            dependencies: [
+                "SafeSFSymbols",
+            ]
         )
     ]
 )
