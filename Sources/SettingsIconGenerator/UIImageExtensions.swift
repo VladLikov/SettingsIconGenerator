@@ -32,7 +32,7 @@ extension UIImage {
         }
     }
 
-        @available(iOS 13, tvOS 13, *)
+    @available(iOS 13, tvOS 13, *)
     public static func generateSettingsIcon(_ image: UIImage, backgroundColor: UIColor) -> UIImage {
 
         let iconConfig       = UIImage.SymbolConfiguration(pointSize: CGFloat(iconFontSize),       weight: .regular)
